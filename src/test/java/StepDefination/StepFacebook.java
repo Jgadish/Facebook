@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 
 import BaseLayer.BaseClass;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 public class StepFacebook extends BaseClass{
 	
@@ -28,6 +28,16 @@ public class StepFacebook extends BaseClass{
 		lname.sendKeys("jain");
 	   
 	    
+	}
+	@Given("user enter mobile number")
+	public void user_enter_mobile_number() {
+		 WebElement mobile = driver.findElement(By.name("reg_email__"));
+		   mobile.sendKeys("45862");
+	}
+	@Then("user enter password")
+	public void user_enter_password() {
+		 WebElement password = driver.findElement(By.name("reg_passwd__"));
+		   password.sendKeys("prachi@123");
 	}
 
 }
