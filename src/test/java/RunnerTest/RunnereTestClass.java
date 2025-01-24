@@ -5,9 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features="C:\\Users\\RSC\\git\\Facebook\\Features",
+		features="src/test/java/Features",
 		glue="StepDefination",
-		dryRun=true,
+		dryRun=false,
 		monochrome=true
 		
 		)
